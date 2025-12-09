@@ -14,8 +14,8 @@ const Hero = () => {
       <div className="absolute inset-0 h-full w-full bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px]"></div>
 
       {/* 2. Animated Gradient Blobs (Purple & Blue to match brand) */}
-      <div className="absolute top-[-10%] left-[-10%] h-[500px] w-[500px] animate-pulse rounded-full bg-purple-400/30 blur-[100px] filter transition-all duration-1000" />
-      <div className="absolute right-[-10%] bottom-[-10%] h-[500px] w-[500px] animate-pulse rounded-full bg-blue-400/30 blur-[100px] filter transition-all delay-700 duration-1000" />
+      <div className="absolute top-[0%] md:top-[-10%] left-[-10%] w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] blur-[70px] animate-pulse rounded-full bg-purple-400/30 md:blur-[90px] filter transition-all delay-700 duration-1000" />
+      <div className="absolute bottom-[0%] md:bottom-[-10%] right-[-10%] w-[250px] h-[250px] sm:w-[350px] sm:h-[350px] md:w-[400px] md:h-[400px] lg:h-[500px] lg:w-[500px] blur-[70px] animate-pulse rounded-full bg-blue-400/30 md:blur-[90px] filter transition-all delay-700 duration-1000" />
 
       <div className="mx-auto max-w-4xl text-center">
         <div className="animate-pulse-light mb-3 inline-flex items-center rounded-full bg-white/80 px-4 py-1.5 text-sm font-medium text-[#E07A5F]">
