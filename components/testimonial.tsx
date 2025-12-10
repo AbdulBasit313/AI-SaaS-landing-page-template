@@ -43,7 +43,7 @@ const TestimonialCard: FC<TestimonialCardProps> = ({
   testimonial: { name, title, feedback, image, stars },
 }) => {
   return (
-    <div className="flex max-w-full shrink-0 flex-col items-center justify-between gap-4 rounded-2xl border border-[#eee] bg-[#f4f4f4] p-8 text-center sm:max-w-[425px]">
+    <div className="flex max-w-full shrink-0 flex-col items-center justify-between gap-4 rounded-2xl border border-[#eee] bg-[#f4f4f4] p-8 text-center">
       <p className="text-center leading-8 text-[#0d1a3b] before:content-['“'] after:content-['”']">
         {feedback}
       </p>
@@ -74,7 +74,7 @@ const TestimonialSection: FC<TestimonialSectionProps> = ({ testimonials = testim
           subtitle="Real stories from people who use our product every day"
         />
 
-        <div className="grid justify-center gap-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="grid sm:grid-cols-2 gap-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {testimonials.map((testimonial) => (
             <TestimonialCard key={testimonial.name} testimonial={testimonial} />
           ))}

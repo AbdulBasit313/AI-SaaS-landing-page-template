@@ -138,7 +138,7 @@ const StatsSection = () => {
         title="Build Faster, Smarter & More Beautiful Websites with AI"
         subtitle="Our AI-powered platform automates design, layout, content, and branding — helping you launch stunning websites in minutes instead of weeks."
       />
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8  ">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
         {stats.map((stat, index) => (
           <div
             key={index}

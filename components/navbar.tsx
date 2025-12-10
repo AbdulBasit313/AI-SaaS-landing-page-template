@@ -20,13 +20,13 @@ const Navbar = () => {
 
   return (
     <nav className="relative z-20 h-16 w-full border-b border-[#ccc] bg-white">
-      <div className="mx-auto flex h-full w-full max-w-[1200px] items-center justify-between px-4 py-1">
+      <div className="mx-auto max-w-[1200px] flex h-full w-full items-center justify-between px-4 py-1">
         {isVisible ? (
           <span className="text-[#607b96] md:hidden">_menu</span>
         ) : (
           <div className="animate-fade-up relative flex items-center gap-3 transition-all duration-300 md:static">
             {/* logo */}
-            <a href="https://www.codevertiser.com/" className="flex items-center gap-3">
+            <a href="https://www.codevertiser.com/">
               <img
                 src="https://res.cloudinary.com/dyvkdwzcj/image/upload/v1709055594/logo-1_vo1dni.png"
                 className="h-8"
@@ -48,7 +48,7 @@ const Navbar = () => {
         </div>
 
         <ul
-          className={`${isVisible ? 'flex' : 'hidden'} animate-fade-in absolute top-16 left-0 z-10 z-50 h-screen w-full flex-col bg-white md:static md:top-0 md:flex md:h-full md:w-[72%] md:flex-row`}
+          className={`${isVisible ? 'flex' : 'hidden'} animate-fade-in absolute top-16 left-0 z-10 z-50 h-screen w-full flex-col bg-white md:static md:top-0 md:flex md:h-full md:w-[74%] md:flex-row`}
         >
           {navItems.map((item) => (
             <li
