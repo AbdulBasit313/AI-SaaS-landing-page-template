@@ -19,9 +19,9 @@ const PricingCard: React.FC<PricingCardProps> = ({
   icon,
 }) => {
   return (
-    <div className="">
+    <div className="flex h-full flex-1 flex-col">
       <div className="rounded-2xl border border-stone-200">
-        <div className="flex gap-4 p-6">
+        <div className="flex gap-4 p-4">
           {icon}
           <div>
             <h3 className="text-xl font-semibold">{title}</h3>
@@ -29,7 +29,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
           </div>
         </div>
       </div>
-      <div className="mt-6 rounded-2xl border border-gray-200 p-6">
+      <div className="mt-6 flex h-full flex-1 flex-col rounded-2xl border border-gray-200 p-4 lg:p-6">
         <div className="border-b border-b-gray-200 pb-6">
           <p className="mb-6 text-3xl font-bold text-gray-900">
             {price}
@@ -40,7 +40,7 @@ const PricingCard: React.FC<PricingCardProps> = ({
 
           <a
             href="#"
-            className="inline-flex h-9 w-full items-center justify-center gap-2 rounded-lg border border-[#D8E0F0] bg-transparent px-4 py-2 font-medium text-[#7D8592] transition duration-300 ease-in-out hover:bg-[#e4ecfc] disabled:cursor-not-allowed disabled:border-gray-300 disabled:bg-gray-200 disabled:text-gray-500"
+            className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-[#D8E0F0] bg-transparent px-4 py-2 font-medium text-[#7D8592] transition duration-300 ease-in-out hover:bg-[#e4ecfc] disabled:cursor-not-allowed disabled:border-gray-300 disabled:bg-gray-200 disabled:text-gray-500"
           >
             {cta}
             <ArrowUpRight className="h-6 w-5" />
@@ -116,7 +116,7 @@ const PricingSection = () => {
           subtitle="Launch faster with our flexible pricing plans for every stage of your project"
         />
 
-        <div className="mx-auto grid max-w-7xl gap-8 md:grid-cols-3">
+        <div className="mx-auto grid max-w-7xl gap-6 md:grid-cols-3 lg:gap-8">
           {pricingOptions.map((option, index) => (
             <PricingCard key={index} {...option} />
           ))}

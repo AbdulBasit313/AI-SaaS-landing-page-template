@@ -2,7 +2,7 @@ import { Megaphone } from 'lucide-react'
 
 const PromoBanner = () => {
   return (
-    <section className="mx-auto my-12 max-w-5xl px-3">
+    <section className="mx-auto my-12 max-w-5xl px-4">
       <div className="relative rounded-xl bg-[#F4F4F4] p-7 md:grid md:grid-cols-2 md:rounded-l-xl md:rounded-r-none md:p-12">
         <div className="max-w-lg">
           <h2 className="mb-4 text-2xl font-bold md:text-3xl">
